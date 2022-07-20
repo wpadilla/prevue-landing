@@ -3,14 +3,26 @@
 // BOOTSTRAP
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+// PRIMENG
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.min.css";
 
 @import "./styles/colors";
 
+
 body {
-  font-family: 'Ubuntu', sans-serif;
   background-color: #f7f7f7;
+  overflow-x: hidden;
 }
 
+* {
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+.pi {
+  font-family: 'primeicons' !important;
+}
 .subtitle {
   font-weight: bold;
   margin: 0;
@@ -28,4 +40,24 @@ body {
   font-weight: 300;
   color: $gray;
   font-size: 1.2vw;
+}
+
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  &.p-highlight {
+    button {
+      background-color: $blue;
+    }
+  }
+
+    button {
+      background-color: transparent;
+      width: 8vw;
+      height: 0.625rem;
+      transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+      border-radius: 0.625rem;
+      border: 1px solid $blue;
+    }
 }

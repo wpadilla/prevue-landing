@@ -1,3 +1,5 @@
+@import "src/styles/colors";
+
 .layout-navbar {
   position: absolute;
   top: 0;
@@ -16,4 +18,76 @@
     max-height: 1.25rem;
     cursor: pointer;
   }
+}
+
+.sidebar-wrapper {
+  background: white;
+  width: 40vw;
+  text-align: end;
+  padding-right: 7vw;
+  color: $blue;
+  .follow-us {
+    font-size:24px;
+    letter-spacing: 5px;
+    color: $rose;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
+  .sidebar-main-routes {
+    h3 {
+      font-size: 3vw;
+      cursor: pointer;
+      transition: all .3s ease;
+      &:hover {
+        color: $rose;
+      }
+    }
+  }
+  .sidebar-secondary-routes {
+    padding-bottom: 20px;
+    p {
+      font-weight: 300;
+      cursor: pointer;
+      font-size: 21px;
+      transition: all .3s ease;
+      &:hover {
+        color: $rose;
+      }
+    }
+  }
+
+  .sidebar-networks {
+    color: white;
+    align-items: center;
+    margin: 0;
+    text-align: end;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    float: right;
+
+    img {
+      cursor: pointer;
+      margin-left: 2.5rem;
+      width: 1.9rem;
+    }
+  }
+
+}
+
+::ng-deep {
+  .p-sidebar-right {
+    width: unset !important;
+    .p-sidebar-header {
+      padding-right: 8vw;
+      padding-bottom: 3.75rem;
+
+      .p-sidebar-close-icon {
+        font-size: 3vw;
+        font-weight: 300;
+        color: $blue;
+      }
+    }
+  }
+
 }

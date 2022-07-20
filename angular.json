@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "prevue-landing"
+  "cli": {
+    "analytics": false
+  }
 }

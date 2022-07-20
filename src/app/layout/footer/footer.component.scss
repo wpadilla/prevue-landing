@@ -31,12 +31,26 @@
       font-weight: 300;
       margin-right: 0.9375rem;
       cursor: pointer;
+      transition: all .3s ease;
+      &:hover {
+        color: $rose;
+        .back-to-top {
+          color: $rose;
+          border-color: $rose;
+        }
+      }
     }
 
     .back-to-top {
       border: 0.0625rem solid white;
       padding: 0.4375rem;
       margin-left: 0.5rem;
+      transition: all .3s ease;
+      &:hover {
+        color: $rose;
+        border-color: $rose;
+
+      }
     }
   }
 }
