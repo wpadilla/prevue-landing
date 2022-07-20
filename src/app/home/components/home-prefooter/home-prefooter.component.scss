@@ -1,0 +1,43 @@
+@import "src/styles/colors";
+
+.home-prefooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  justify-items: self-end;
+  align-items: center;
+  background-color: $blue-2;
+  height: 25vw;
+  padding-bottom: 5vw;
+
+  .home-prefooter-info {
+    .subtitle {
+      font-size: 2vw;
+      font-weight: 400;
+    }
+  }
+
+  .home-prefooter-images {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .home-prefooter-qr {
+      width: 8vw;
+      margin-bottom: 1vw;
+      filter: invert(1);
+    }
+
+    .home-prefooter-stores {
+      display: flex;
+      align-items: center;
+      .store-apple {
+        width: 100px;
+      }
+      .store-google {
+        width: 130px;
+      }
+    }
+
+  }
+
+}

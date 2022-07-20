@@ -1,0 +1,26 @@
+<div class="home-testimonials">
+  <div class="home-testimonials-header">
+    <p class="subtitle text-white text-uppercase text-center mb-3">Testimonials</p>
+    <h1 class="title text-white mb-4">Don't take our word for it</h1>
+    <p class="info-text text-white text-center">
+      See what thousand of other people have to say about PreVue and the <br>
+      positive impact it's had on their relationships.
+    </p>
+  </div>
+
+  <p-carousel styleClass="home-testimonials-wrapper" [value]="testimonials" [numVisible]="1" [numScroll]="1"
+              [circular]="false"
+              [showNavigators]="false">
+    <ng-template let-testimonial pTemplate="item">
+      <div class="home-testimonials-quotes-wrapper">
+        <div class="quote-wrapper mb-4">
+          <img src="assets/images/icons/open-quotations.png" class="quote" alt="">
+          <img src="assets/images/icons/close-quotations.png" class="quote" alt="">
+          <h1 class="title text-white text-center" [innerHTML]="testimonial.quote">
+          </h1>
+        </div>
+        <p class="subtitle text-center mb-4">{{testimonial.author}}</p>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

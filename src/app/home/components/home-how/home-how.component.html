@@ -1,0 +1,26 @@
+<p-carousel styleClass="home-how-wrapper" [value]="steps" [numVisible]="1" [numScroll]="1" [circular]="false"
+            [showNavigators]="false">
+  <ng-template let-step pTemplate="item">
+    <div class="home-how">
+      <div class="home-how-steps-image">
+        <img [src]="step.image" alt="">
+      </div>
+      <div class="home-how-steps-info-wrapper">
+        <div class="home-how-steps-info" style="
+        background: url({{step.numberBackground}});
+        background-size: {{step.number === 'one' ? '60' : '85' }}%;
+">
+          <p class="text-uppercase subtitle">Step {{step.number}}</p>
+          <h2 class="text-nowrap title" [innerHTML]="step.title">
+          </h2>
+          <p class="info-text text-nowrap" [innerHTML]="step.explain">
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </ng-template>
+</p-carousel>
+
+
+

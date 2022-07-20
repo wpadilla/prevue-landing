@@ -1,0 +1,62 @@
+@import "src/styles/colors";
+
+::ng-deep {
+  .step-two-text {
+    margin-left: -2vw;
+  }
+  .home-how-wrapper {
+    background: url("~src/assets/images/backgrounds/HowItWorks-background.png");
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+    .home-how {
+      position: relative;
+      height: 50vw;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+      align-items: center;
+      justify-items: end;
+      gap: 10%;
+
+      .home-how-steps-image {
+        img {
+          max-height: 40vw
+        }
+      }
+
+      .home-how-steps-info-wrapper {
+        display: flex;
+        align-items: start;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+
+        .home-how-steps-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100%;
+          background-position: center !important;
+          background-repeat: no-repeat !important;
+          padding-top: 8vw;
+          text-align: center;
+          width: 30vw;
+        }
+      }
+    }
+    .p-carousel-content {
+      position: relative;
+      .p-carousel-indicators {
+        position: absolute;
+        left: 55%;
+        top: 29%;
+      }
+    }
+
+  }
+
+}
+
+
+

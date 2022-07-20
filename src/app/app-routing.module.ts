@@ -8,7 +8,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: "*",
+    path: "**",
     redirectTo: "home",
   }
 ];

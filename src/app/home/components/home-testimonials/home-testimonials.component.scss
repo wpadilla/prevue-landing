@@ -1,0 +1,63 @@
+@import "src/styles/colors";
+::ng-deep {
+  .home-testimonials {
+    background: url("~src/assets/images/backgrounds/Testimonials-background.png");
+    background-size: 100% 100%;
+    height: 55vw;
+    width: 100%;
+    display: grid;
+    grid-template-column: repeat(auto-fit, minmax(100%, 1fr));
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    margin-top: -6vw;
+    padding-top: 10vw;
+
+    .home-testimonials-header {
+
+    }
+    .home-testimonials-quotes-wrapper {
+      position: relative;
+      .title {
+        font-size: 5vw;
+        font-style: italic;
+      }
+      .subtitle {
+        color: $rose-2;
+        font-style: italic;
+        font-size: 1.5vw;
+      }
+      .quote-wrapper {
+        position: relative;
+        padding-top: 2vw;
+
+        .quote {
+          position: absolute;
+          width: 12vw;
+          top: 0;
+          left: 19vw;
+
+          &:last-of-type {
+            bottom: 0px;
+            right: 21vw;
+            top: unset;
+            left: unset;
+          }
+        }
+      }
+    }
+    .p-carousel .p-carousel-indicators .p-carousel-indicator {
+      &.p-highlight {
+        button {
+          background-color: $rose-2;
+        }
+      }
+
+      button {
+        border: 1px solid $rose-2;
+      }
+    }
+  }
+
+
+}
