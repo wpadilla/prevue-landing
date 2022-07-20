@@ -1,0 +1,18 @@
+.layout-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 1.875rem 9.375rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  .app-logo {
+    max-height: 2.5rem;
+  }
+
+  .hamburger {
+    max-height: 1.25rem
+  }
+}

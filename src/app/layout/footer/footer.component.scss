@@ -1,0 +1,14 @@
+@import "~src/styles/colors";
+
+.layout-footer {
+  width: 100%;
+  background-color: $blue;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 200px;
+  .footer-options {
+    display: flex;
+    list-style: none;
+    color: $rose;
+  }
+}
