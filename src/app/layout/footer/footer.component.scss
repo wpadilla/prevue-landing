@@ -5,10 +5,38 @@
   background-color: $blue;
   display: flex;
   justify-content: space-between;
-  padding: 10px 200px;
+  padding: 0 6rem;
+  height: 5rem;
+
   .footer-options {
     display: flex;
     list-style: none;
-    color: $rose;
+    color: white;
+    align-items: center;
+    margin: 0;
+    &:last-of-type {
+      li {
+        margin-right: 2.5rem;
+        &:first-of-type {
+          letter-spacing: 0.1875rem;
+          color: $rose;
+          font-weight: 400;
+        }
+        img {
+          width: 1.25rem;
+        }
+      }
+    }
+    li {
+      font-weight: 300;
+      margin-right: 0.9375rem;
+      cursor: pointer;
+    }
+
+    .back-to-top {
+      border: 0.0625rem solid white;
+      padding: 0.4375rem;
+      margin-left: 0.5rem;
+    }
   }
 }
