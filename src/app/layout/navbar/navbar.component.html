@@ -1,7 +1,10 @@
 <div class="layout-navbar">
   <img class="app-logo" src="assets/images/logo-white.png" alt="">
-  <img class="hamburger" src="assets/images/icons/hamburger.png" alt="">
+  <img class="hamburger" src="assets/images/icons/hamburger.png" (click)="visibleSidebar=true">
 </div>
 
+<p-sidebar [(visible)]="visibleSidebar" position="right" [baseZIndex]="10000">
+  <h3>Right Sidebar</h3>
+</p-sidebar>
 
 

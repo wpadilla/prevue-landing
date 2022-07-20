@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from "./layout/navbar/navbar.component";
 import { FooterComponent } from "./layout/footer/footer.component";
+import { SidebarModule } from "primeng/sidebar";
+
 
 @NgModule({
   declarations: [
@@ -14,10 +16,11 @@ import { FooterComponent } from "./layout/footer/footer.component";
     FooterComponent,
     HomeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SidebarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
