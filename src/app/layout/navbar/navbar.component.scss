@@ -1,5 +1,6 @@
 @import "src/styles/colors";
 
+
 .layout-navbar {
   position: absolute;
   top: 0;
@@ -12,6 +13,7 @@
   z-index: 999;
   .app-logo {
     max-height: 2.5rem;
+    cursor: pointer;
   }
 
   .hamburger {
@@ -90,4 +92,20 @@
     }
   }
 
+}
+
+.mission-navbar {
+  position: relative;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .layout-navbar {
+    position: relative;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    background: white;
+    padding: 1.875rem;
+
+  }
 }

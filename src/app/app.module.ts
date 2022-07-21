@@ -14,6 +14,11 @@ import { HomeHowComponent } from './home/components/home-how/home-how.component'
 import { HomeTestimonialsComponent } from './home/components/home-testimonials/home-testimonials.component';
 import { HomePrefooterComponent } from './home/components/home-prefooter/home-prefooter.component';
 import { CarouselModule } from "primeng/carousel";
+import { ContactComponent } from './home/components/contact/contact.component';
+import { MissionComponent } from './home/components/mission/mission.component';
+import { PolicyComponent } from './home/components/policy/policy.component';
+import { TermsComponent } from './home/components/terms/terms.component';
+import { ReactiveFormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -26,14 +31,19 @@ import { CarouselModule } from "primeng/carousel";
     HomeAboutComponent,
     HomeHowComponent,
     HomeTestimonialsComponent,
-    HomePrefooterComponent
+    HomePrefooterComponent,
+    ContactComponent,
+    MissionComponent,
+    PolicyComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SidebarModule,
-    CarouselModule
+    CarouselModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

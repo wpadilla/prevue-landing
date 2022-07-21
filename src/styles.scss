@@ -11,6 +11,7 @@
 @import "./styles/colors";
 
 
+
 body {
   background-color: #f7f7f7;
   overflow-x: hidden;
@@ -60,4 +61,22 @@ body {
       border-radius: 0.625rem;
       border: 1px solid $blue;
     }
+}
+
+
+
+@media (max-width: 768px) {
+
+  .subtitle {
+
+  }
+
+  .title {
+    font-size: 3.25rem !important;
+  }
+
+  .info-text {
+    font-size: 14px !important;
+    white-space: normal !important;
+  }
 }

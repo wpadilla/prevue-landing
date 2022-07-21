@@ -1,6 +1,6 @@
-<div class="layout-navbar">
-  <img class="app-logo" src="assets/images/logo-white.png" alt="">
-  <img class="hamburger" src="assets/images/icons/hamburger.png" (click)="visibleSidebar=true">
+<div class="layout-navbar" [class.mission-navbar]="enableMissionNavbar">
+  <img class="app-logo" src="assets/images/{{enableMissionNavbar || screenMode === 'md' ? 'logo.png' : 'logo-white.png'}}" (click)="goTo('')">
+  <img class="hamburger" src="assets/images/icons/{{enableMissionNavbar || screenMode === 'md' ? 'hamburger-blue' : 'hamburger'}}.png" (click)="visibleSidebar=true">
 </div>
 
 <p-sidebar [(visible)]="visibleSidebar" position="right" [baseZIndex]="10000">
@@ -12,10 +12,10 @@
       <h3>Contact</h3>
     </div>
     <div class="sidebar-secondary-routes mb-5">
-      <p>Mission</p>
-      <p>Terms of Service</p>
-      <p>Privacy Policy</p>
-      <p>Contact</p>
+      <p (click)="goTo('mission')">Mission</p>
+      <p (click)="goTo('terms')">Terms of Service</p>
+      <p (click)="goTo('policy')">Privacy Policy</p>
+      <p (click)="goTo('contact')">Contact</p>
     </div>
 
     <div class="follow-us">

@@ -1,0 +1,69 @@
+@import "src/styles/colors";
+
+.mission {
+  position: relative;
+  width: 100%;
+  .hero-background {
+    width: 100%;
+  }
+  .mission-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    .mission-wrapper{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+      align-items: center;
+      justify-items: start;
+      padding-bottom: 1.3125rem;
+      .mission-founder-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .mission-founder {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+
+          .mission-founder-image {
+            width: 18.75rem;
+            object-fit: cover;
+            border-radius: 50rem;
+            margin-bottom: 1rem;
+          }
+          .subtitle {
+            color: $blue;
+            text-transform: uppercase;
+            letter-spacing: 0.3125rem;
+            font-size: 1.3125rem;
+            font-weight: 400;
+          }
+          .title {
+            font-size: 1.875rem;
+            margin-bottom: 0;
+          }
+
+        }
+      }
+      .mission-info-wrapper {
+        padding-left: 9.375rem;
+        h1 {
+          font-size: 6vw;
+          color: $blue;
+        }
+        .mission-video {
+          max-width: 100%;
+        }
+      }
+    }
+
+  }
+}

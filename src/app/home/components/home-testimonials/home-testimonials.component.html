@@ -10,6 +10,7 @@
 
   <p-carousel styleClass="home-testimonials-wrapper" [value]="testimonials" [numVisible]="1" [numScroll]="1"
               [circular]="false"
+              [autoplayInterval]="3000"
               [showNavigators]="false">
     <ng-template let-testimonial pTemplate="item">
       <div class="home-testimonials-quotes-wrapper">

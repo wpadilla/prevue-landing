@@ -1,1 +1,48 @@
-<p>contact works!</p>
+<div class="contact">
+  <img class="w-100" src="assets/images/backgrounds/contact-background.png" alt="">
+  <div class="contact-container">
+    <div class="contact-wrapper">
+      <div class="contact-title-wrapper">
+        <h1>Contact us</h1>
+      </div>
+      <div class="contact-form-wrapper">
+        <div class="contact-form" [formGroup]="contactForm">
+          <p class="subtitle">Drop us a line</p>
+          <input type="text" formControlName="name" placeholder="Name">
+          <input type="text" formControlName="email" placeholder="Email">
+          <input type="text" formControlName="phone" placeholder="Phone">
+          <input type="text" formControlName="message" placeholder="Message">
+          <button class="contact-form-btn">Send it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contact-prefooter">
+  <div class="contact-prefooter-column">
+    <p class="subtitle">Address</p>
+    <ul class="contact-prefooter-list">
+      <li>PreVue Building</li>
+      <li>1234 Streetville Avenue,</li>
+      <li>City, VA</li>
+    </ul>
+  </div>
+  <div class="contact-prefooter-column">
+    <p class="subtitle">Email</p>
+    <ul class="contact-prefooter-list">
+      <li>contact@prevue.com</li>
+    </ul>
+  </div>
+  <div class="contact-prefooter-column">
+    <p class="subtitle">Phone</p>
+    <ul class="contact-prefooter-list">
+      <li>123-456-7890</li>
+    </ul>
+  </div>
+  <div class="contact-prefooter-column">
+    <p class="subtitle">Press</p>
+    <ul class="contact-prefooter-list">
+      <li>press@prevue.com</li>
+    </ul>
+  </div>
+</div>

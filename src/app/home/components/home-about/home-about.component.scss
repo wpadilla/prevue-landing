@@ -27,3 +27,17 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .home-about-info {
+    position: relative !important;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+    justify-items: center;
+  }
+
+  .home-about-video {
+    width: 170% !important;
+    margin-left: -37% !important;
+  }
+}
