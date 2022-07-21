@@ -5,8 +5,7 @@
   background-color: $blue;
   display: flex;
   justify-content: space-between;
-  padding: 0 6rem;
-  height: 5rem;
+  padding: 1rem 6rem;
 
   .footer-options {
     display: flex;
@@ -14,11 +13,23 @@
     color: white;
     align-items: center;
     margin: 0;
+    padding: 0;
+    width: 100%;
     &:last-of-type {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+      gap: 15px;
+      align-items: center;
+      justify-items: center;
       li {
-        margin-right: 2.5rem;
+        white-space: nowrap;
+        &:last-of-type {
+          grid-column: span 4;
+          justify-self: end;
+        }
         &:first-of-type {
           letter-spacing: 0.1875rem;
+          grid-column: span 2;
           color: $rose;
           font-weight: 400;
         }
@@ -50,6 +61,59 @@
         color: $rose;
         border-color: $rose;
 
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1500px) {
+  .footer-options {
+    &:last-of-type {
+      li {
+        &:last-of-type {
+          grid-column: span 3 !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .layout-footer {
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+
+    .footer-options {
+      margin-bottom: 1.875rem;
+      justify-content: center;
+
+      .back-to-top {
+        margin-left: unset !important;
+        margin-top: 0.625rem;
+      }
+     li {
+       white-space: nowrap;
+       font-size: 3.4vw;
+       margin-right: 4vw;
+     }
+
+      &:last-of-type {
+        grid-template-columns: repeat(auto-fit, minmax(15%, 1fr)) !important;
+
+        li {
+          &:first-of-type, &:last-of-type {
+            grid-column: 1 / -1;
+          }
+          &:last-of-type {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-right: 0 !important;
+          }
+        }
       }
     }
   }

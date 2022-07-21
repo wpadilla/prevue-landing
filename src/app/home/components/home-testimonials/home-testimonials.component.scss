@@ -1,4 +1,5 @@
 @import "src/styles/colors";
+
 ::ng-deep {
   .home-testimonials {
     background: url("~src/assets/images/backgrounds/Testimonials-background.png");
@@ -6,30 +7,41 @@
     height: 55vw;
     width: 100%;
     display: grid;
-    grid-template-column: repeat(auto-fit, minmax(100%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     align-items: center;
     justify-items: center;
     position: relative;
     margin-top: -6vw;
     padding-top: 10vw;
+    overflow: hidden;
 
     .home-testimonials-header {
-
+      h1 {
+        text-align: center;
+      }
     }
+
     .home-testimonials-quotes-wrapper {
       position: relative;
+
       .title {
         font-size: 5vw;
         font-style: italic;
       }
+
       .subtitle {
         color: $rose-2;
         font-style: italic;
         font-size: 1.5vw;
       }
+
       .quote-wrapper {
         position: relative;
         padding-top: 2vw;
+
+        .title {
+          text-align: center;
+        }
 
         .quote {
           position: absolute;
@@ -46,6 +58,7 @@
         }
       }
     }
+
     .p-carousel .p-carousel-indicators .p-carousel-indicator {
       &.p-highlight {
         button {
@@ -61,3 +74,35 @@
 
 
 }
+
+
+@media (max-width: 768px) {
+  .home-testimonials {
+    height: 90vh !important;
+
+    .home-testimonials-quotes-wrapper {
+      .quote-wrapper {
+        .title {
+          break-word: break-all;
+          font-size: 2rem !important;
+        }
+      }
+    }
+
+    .quote-wrapper {
+      .quote {
+        width: 25vw !important;
+        left: 36vw !important;
+        top: -1.125rem;
+
+        &:last-of-type {
+          right: 30vw !important;
+          left: unset !important;
+          top: unset !important;
+        }
+      }
+    }
+  }
+
+}
+

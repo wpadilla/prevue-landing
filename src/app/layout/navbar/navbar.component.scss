@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 999;
+
   .app-logo {
     max-height: 2.5rem;
     cursor: pointer;
@@ -28,30 +29,36 @@
   text-align: end;
   padding-right: 7vw;
   color: $blue;
+
   .follow-us {
-    font-size:24px;
+    font-size: 24px;
     letter-spacing: 5px;
     color: $rose;
     margin-bottom: 1.25rem;
     text-transform: uppercase;
   }
+
   .sidebar-main-routes {
     h3 {
       font-size: 3vw;
       cursor: pointer;
       transition: all .3s ease;
+
       &:hover {
         color: $rose;
       }
     }
   }
+
   .sidebar-secondary-routes {
     padding-bottom: 20px;
+
     p {
       font-weight: 300;
       cursor: pointer;
       font-size: 21px;
       transition: all .3s ease;
+
       &:hover {
         color: $rose;
       }
@@ -67,10 +74,11 @@
     justify-content: space-between;
     width: 80%;
     float: right;
+    gap: 15px;
+    flex-wrap: wrap;
 
     img {
       cursor: pointer;
-      margin-left: 2.5rem;
       width: 1.9rem;
     }
   }
@@ -80,6 +88,7 @@
 ::ng-deep {
   .p-sidebar-right {
     width: unset !important;
+
     .p-sidebar-header {
       padding-right: 8vw;
       padding-bottom: 3.75rem;
@@ -108,4 +117,22 @@
     padding: 1.875rem;
 
   }
+
+  .sidebar-wrapper {
+    background: white;
+    width: 100%;
+
+    .sidebar-main-routes {
+      h3 {
+        font-size: 1.875rem !important;
+      }
+    }
+  }
+
+  ::ng-deep {
+    .p-sidebar-right {
+      width: 100% !important;
+    }
+  }
 }
+

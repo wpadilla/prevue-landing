@@ -6,8 +6,9 @@
   justify-items: self-end;
   align-items: center;
   background-color: $blue-2;
-  height: 25vw;
+  height: 25rem;
   padding-bottom: 5vw;
+  margin-top: -0.1875rem;
 
   .home-prefooter-info {
     .subtitle {
@@ -17,10 +18,11 @@
   }
 
   .home-prefooter-images {
-    display:flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
+
     .home-prefooter-qr {
       width: 8vw;
       margin-bottom: 1vw;
@@ -30,9 +32,13 @@
     .home-prefooter-stores {
       display: flex;
       align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
       .store-apple {
         width: 100px;
       }
+
       .store-google {
         width: 130px;
       }
@@ -40,4 +46,22 @@
 
   }
 
+}
+
+@media (max-width: 768px) {
+  .home-prefooter {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+    height: 25rem !important;
+    padding: 1.25rem;
+    justify-items: center !important;
+
+    //.home-prefooter-stores {
+    //  .store-apple {
+    //    width: 200px !important;
+    //  }
+    //  .store-google {
+    //    width: 250px !important;
+    //  }
+    //}
+  }
 }
