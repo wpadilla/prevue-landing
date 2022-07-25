@@ -79,4 +79,13 @@ body {
     font-size: 14px !important;
     white-space: normal !important;
   }
+
+  .p-carousel .p-carousel-indicators .p-carousel-indicator {
+
+
+    button {
+      min-width: 50px;
+      width: 20vw;
+    }
+  }
 }

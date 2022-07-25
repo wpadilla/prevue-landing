@@ -1,0 +1,120 @@
+@import "src/styles/colors";
+
+.terms-wrapper {
+  font-weight: 300;
+  padding: 10vh 9.375rem;
+  background-color: #fff;
+
+  a {
+    color: $rose !important;
+    font-weight: 300 !important;
+    cursor: pointer;
+    word-break: break-all;
+  }
+
+  .s1 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 12pt;
+  }
+
+  .h1, h1 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+
+  .p, p {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 12pt;
+    margin-bottom: 1.5625rem;
+  }
+
+  .a {
+    color: #0462C1;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 12pt;
+  }
+
+  .s2 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+
+  .s3 {
+    color: #006FC0;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 12pt;
+  }
+
+  .s5 {
+    color: #252525;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+
+  .s7 {
+    color: #0462C1;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+
+  ul, ol {
+    padding-left: 0pt;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  #l6 {
+    list-style: lower-alpha;
+    padding-left: 1.4375rem;
+  }
+
+  #l2, #l3, #l4, #l5 {
+    padding-left: 1.875rem;
+  }
+  p,a,span,div {
+    font-weight: 300;
+  }
+
+  *{
+    color: $gray !important;
+    font-size: 0.6875rem;
+  }
+  .title {
+    font-weight: bold;
+    color: $blue !important;
+    margin-bottom: 5vh;
+    display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .terms-wrapper {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+}

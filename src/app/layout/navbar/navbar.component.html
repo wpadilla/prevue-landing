@@ -1,15 +1,15 @@
-<div class="layout-navbar" [class.mission-navbar]="enableMissionNavbar">
-  <img class="app-logo" src="assets/images/{{enableMissionNavbar || screenMode === 'md' ? 'logo.png' : 'logo-white.png'}}" (click)="goTo('')">
-  <img class="hamburger" src="assets/images/icons/{{enableMissionNavbar || screenMode === 'md' ? 'hamburger-blue' : 'hamburger'}}.png" (click)="visibleSidebar=true">
+<div class="layout-navbar" [class.white-navbar]="enableWhiteNavbar">
+  <img class="app-logo" src="assets/images/{{enableWhiteNavbar || screenMode === 'md' ? 'logo.png' : 'logo-white.png'}}" (click)="goTo('')">
+  <img class="hamburger" src="assets/images/icons/{{enableWhiteNavbar || screenMode === 'md' ? 'hamburger-blue' : 'hamburger'}}.png" (click)="visibleSidebar=true">
 </div>
 
 <p-sidebar [(visible)]="visibleSidebar" position="right" [baseZIndex]="10000">
   <div class="sidebar-wrapper">
     <div class="sidebar-main-routes mb-4">
-      <h3>About</h3>
-      <h3>How it Works</h3>
-      <h3>Testimonials</h3>
-      <h3>Contact</h3>
+      <h3 (click)="goTo('#home-about')">About</h3>
+      <h3 (click)="goTo('#home-how')">How it Works</h3>
+      <h3 (click)="goTo('#home-testimonials')">Testimonials</h3>
+<!--      <h3 (click)="goTo('contact')">Contact</h3>-->
     </div>
     <div class="sidebar-secondary-routes mb-5">
       <p (click)="goTo('mission')">Mission</p>

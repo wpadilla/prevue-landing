@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   }
 
   visibleSidebar = false;
-  enableMissionNavbar = false;
+  enableWhiteNavbar = false;
   screenMode: 'xs' | 'md' | 'lg' | 'xl' = 'xl'
   ngOnInit(): void {
     this.toggleNavbar();
@@ -20,19 +20,32 @@ export class NavbarComponent implements OnInit {
   }
 
   toggleNavbar() {
-    this.enableMissionNavbar = location.pathname.includes('mission');
+    this.enableWhiteNavbar = location.pathname.includes('mission') || location.pathname.includes('terms') || location.pathname.includes('policy') ;
     this.router.events.subscribe(event => {
       if(event instanceof NavigationStart) {
         const {url} = event;
         console.log(event, "event");
-        this.enableMissionNavbar = url.includes('mission')
+        this.enableWhiteNavbar = url.includes('mission') || url.includes('policy') || url.includes('terms');
       }
     })
   }
 
   goTo(path: string) {
-    this.router.navigate([path]);
+    if(path.includes("#")) {
+      const element: any = document.querySelector(path);
+
+      if(element){
+        window.scrollTo({top: element.offsetTop, behavior: 'smooth'});
+      } else {
+        this.router.navigate(['']);
+      }
+
+    } else {
+      this.router.navigate([path]);
+    }
+
     this.visibleSidebar = false;
+
   }
 
   //Setup @HostListener to listen to changes

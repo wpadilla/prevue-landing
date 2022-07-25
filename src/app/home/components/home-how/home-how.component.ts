@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home-how',
@@ -37,6 +37,8 @@ export class HomeHowComponent implements OnInit {
 
     }
   ];
+
+
   ngOnInit(): void {
   }
 
