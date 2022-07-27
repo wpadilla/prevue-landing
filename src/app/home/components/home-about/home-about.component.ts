@@ -18,7 +18,9 @@ export class HomeAboutComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
-    if (window.scrollY === this.homeContainer.nativeElement.offsetTop - 200) {
+    if (window.scrollY > this.homeContainer.nativeElement.offsetTop - 200 && window.scrollY < this.homeContainer.nativeElement.offsetTop + 400) {
+      document.querySelector('body')?.click();
+      this.aboutVideo.nativeElement.muted = true;
       this.aboutVideo.nativeElement.paused && this.aboutVideo.nativeElement.play();
     }
   }

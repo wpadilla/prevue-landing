@@ -18,7 +18,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
       align-items: center;
-      justify-items: end;
+      justify-items: flex-end;
       gap: 10%;
 
       .home-how-steps-image {
@@ -29,7 +29,7 @@
 
       .home-how-steps-info-wrapper {
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         width: 100%;
         flex-direction: column;
         height: 100%;
@@ -68,7 +68,7 @@
       .home-how {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
         justify-items: center !important;
-        height: 725px !important;
+        height: 48.75rem !important;
         gap: 0 !important;
 
         .home-how-steps-image {

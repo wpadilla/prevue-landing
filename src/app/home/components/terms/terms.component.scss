@@ -94,6 +94,8 @@
 
   #l2, #l3, #l4, #l5 {
     padding-left: 1.875rem;
+    margin-bottom: 2.5rem;
+
   }
   p,a,span,div {
     font-weight: 300;
@@ -108,6 +110,12 @@
     color: $blue !important;
     margin-bottom: 5vh;
     display: block;
+    font-size: 4vw;
+  }
+  #l1 {
+    > li {
+      font-weight: bold !important;
+    }
   }
 }
 
@@ -116,5 +124,9 @@
   .terms-wrapper {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
+
+    .title {
+      font-size: 2.2rem !important;
+    }
   }
 }

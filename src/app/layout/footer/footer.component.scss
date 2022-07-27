@@ -25,7 +25,7 @@
         white-space: nowrap;
         &:last-of-type {
           grid-column: span 4;
-          justify-self: end;
+          justify-self: flex-end;
         }
         &:first-of-type {
           letter-spacing: 0.1875rem;

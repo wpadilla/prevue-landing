@@ -12,6 +12,15 @@
   justify-content: space-between;
   z-index: 999;
 
+  .download-button {
+    background-color: $rose;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 1.25rem;
+    color: white;
+    margin-right: 2rem;
+    font-size: 0.6875rem;
+  }
   .app-logo {
     max-height: 2.5rem;
     cursor: pointer;
@@ -26,7 +35,7 @@
 .sidebar-wrapper {
   background: white;
   width: 40vw;
-  text-align: end;
+  text-align: flex-end;
   padding-right: 7vw;
   color: $blue;
 
@@ -69,7 +78,7 @@
     color: white;
     align-items: center;
     margin: 0;
-    text-align: end;
+    text-align: flex-end;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -114,8 +123,12 @@
     position: relative;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
     background: white;
-    padding: 1.875rem;
+    padding: 1rem;
 
+    .app-logo {
+      max-height: 1.5rem;
+      cursor: pointer;
+    }
   }
 
   .sidebar-wrapper {

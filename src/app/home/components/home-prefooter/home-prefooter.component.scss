@@ -55,13 +55,20 @@
     padding: 1.25rem;
     justify-items: center !important;
 
-    //.home-prefooter-stores {
-    //  .store-apple {
-    //    width: 200px !important;
-    //  }
-    //  .store-google {
-    //    width: 250px !important;
-    //  }
-    //}
+    .home-prefooter-info {
+      .subtitle {
+        font-size: 1.7rem !important;
+        font-weight: 300 !important;
+      }
+    }
+
+    .home-prefooter-stores {
+      .store-apple {
+        width: 130px !important;
+      }
+      .store-google {
+        width: 170px !important;
+      }
+    }
   }
 }

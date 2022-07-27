@@ -1,5 +1,8 @@
 <div class="layout-navbar" [class.white-navbar]="enableWhiteNavbar">
-  <img class="app-logo" src="assets/images/{{enableWhiteNavbar || screenMode === 'md' ? 'logo.png' : 'logo-white.png'}}" (click)="goTo('')">
+  <div class="d-flex align-items-center">
+    <button *ngIf="screenMode === 'md'" class="download-button">Download</button>
+    <img class="app-logo" src="assets/images/{{enableWhiteNavbar || screenMode === 'md' ? 'logo.png' : 'logo-white.png'}}" (click)="goTo('')">
+  </div>
   <img class="hamburger" src="assets/images/icons/{{enableWhiteNavbar || screenMode === 'md' ? 'hamburger-blue' : 'hamburger'}}.png" (click)="visibleSidebar=true">
 </div>
 
