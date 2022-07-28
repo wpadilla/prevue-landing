@@ -4,7 +4,7 @@
       <div class="home-about-info-wrapper">
         <p class="text-uppercase subtitle">About the app</p>
         <h2 class="title">What is Prevue?</h2>
-        <p class="info-text text-nowrap">
+        <p class="info-text text-nowrap m-0">
           PreVue is a new kind of dating app that ditches the <br>
           doctored photos and misleading bios. With Prevue,<br>
           you match based on a short video that shows who<br>
@@ -23,7 +23,7 @@
     </div>
     <div class="empty-wrapper"></div>
   </div>
-  <video #aboutVideo class="home-about-video" [muted]="true" [autoplay]="true">
+  <video #aboutVideo class="home-about-video" preload="auto"  [muted]="true" controls [autoplay]="true" webkit-playsinline="true" playsinline="true">
     <source src="assets/videos/about.mp4" type="video/mp4">
   </video>
 </div>
